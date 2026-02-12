@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>matchIQ • Registro</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+  <main class="wrap">
+
+    <!-- Panel izquierdo -->
+    <section class="brand">
+      <h2 class="headline">Crea tu cuenta en matchIQ.</h2>
+      <p class="subtitle">
+        Regístrate como Coder o Empresa. Según tu selección, verás el formulario correspondiente.
+      </p>
+
+      <div class="bullets">
+        <div class="pill"><div class="dot"></div><span>Registro rápido y claro</span></div>
+        <div class="pill"><div class="dot"></div><span>Perfil verificado para mejores matches</span></div>
+        <div class="pill"><div class="dot"></div><span>Panel según tu rol</span></div>
+      </div>
+    </section>
+
+    <!-- Panel derecho -->
+    <section class="card" aria-label="Registro">
+
+      <!-- Logo + nombre -->
+      <div class="brand-lockup" aria-label="Logo matchIQ">
+        <img class="logo-icon" src="assets/matchiq.jpg" alt="Logo matchIQ (ícono)">
+        <div class="brand-text">
+          <div class="brand-name"><span>match</span><b>IQ</b></div>
+          <div class="brand-tagline">Create your account</div>
+        </div>
+      </div>
+
+      <h1 class="title">Registro</h1>
+      <p class="hint">Selecciona el tipo de cuenta.</p>
+
+      <!-- Radios (deben estar al mismo nivel que los forms para que ~ funcione) -->
+      <input type="radio" name="role" id="role-coder" checked hidden>
+      <input type="radio" name="role" id="role-company" hidden>
+
+      <!-- Tabs visuales -->
+      <div class="role-tabs">
+        <label for="role-coder">Coder</label>
+        <label for="role-company">Empresa</label>
+      </div>
+
+      <!-- =========================
+           FORM CODER
+           ========================= -->
+      <form class="form form-coder" autocomplete="on">
+        <div class="grid-2">
+          <div class="field">
+            <label for="coder-fullname">Nombre completo</label>
+            <input id="coder-fullname" type="text" placeholder="Ej: Pablo Pérez" required>
+          </div>
+
+          <div class="field">
+            <label for="coder-phone">Teléfono</label>
+            <input id="coder-phone" type="tel" placeholder="Ej: +57 300 000 0000" required>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="coder-doc-type">Tipo de documento</label>
+            <select id="coder-doc-type" required>
+              <option value="" disabled selected>Selecciona</option>
+              <option>CC</option>
+              <option>CE</option>
+              <option>Pasaporte</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="coder-doc-number">Número de documento</label>
+            <input id="coder-doc-number" type="text" placeholder="Ej: 123456789" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="coder-email">Correo electrónico</label>
+          <input id="coder-email" type="email" placeholder="tuemail@correo.com" autocomplete="email" required>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="coder-location">Ciudad / País</label>
+            <input id="coder-location" type="text" placeholder="Ej: Bogotá, Colombia" required>
+          </div>
+
+          <div class="field">
+            <label for="coder-password">Contraseña</label>
+            <input id="coder-password" type="password" placeholder="••••••••" autocomplete="new-password" required>
+          </div>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" required>
+          Acepto términos y condiciones.
+        </label>
+
+        <button class="btn" type="submit">Crear cuenta Coder</button>
+
+        <div class="foot">
+          ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+        </div>
+      </form>
+
+      <!-- =========================
+           FORM EMPRESA
+           ========================= -->
+      <form class="form form-company" autocomplete="on">
+        <div class="field">
+          <label for="company-legal-name">Nombre legal de la empresa</label>
+          <input id="company-legal-name" type="text" placeholder="Ej: MatchIQ SAS" required>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="company-nit">NIT / RUT</label>
+            <input id="company-nit" type="text" placeholder="Ej: 900.123.456-7" required>
+          </div>
+
+          <div class="field">
+            <label for="company-type">Tipo de empresa</label>
+            <select id="company-type" required>
+              <option value="" disabled selected>Selecciona</option>
+              <option>SAS</option>
+              <option>LTDA</option>
+              <option>SA</option>
+              <option>Persona Natural</option>
+              <option>Otra</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="company-email">Correo</label>
+            <input id="company-email" type="email" placeholder="talento@empresa.com" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="company-phone">Teléfono empresarial</label>
+            <input id="company-phone" type="tel" placeholder="Ej: +57 1 6000000" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="company-address">Dirección física</label>
+          <input id="company-address" type="text" placeholder="Ej: Calle 123 #45-67" required>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="company-location">Ciudad / País</label>
+            <input id="company-location" type="text" placeholder="Ej: Medellín, Colombia" required>
+          </div>
+
+          <div class="field">
+            <label for="company-website">Página web oficial</label>
+            <input id="company-website" type="url" placeholder="https://tuempresa.com" required>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="company-contact-name">Persona responsable (Nombre completo)</label>
+            <input id="company-contact-name" type="text" placeholder="Ej: Laura Gómez" required>
+          </div>
+
+          <div class="field">
+            <label for="company-contact-role">Cargo</label>
+            <input id="company-contact-role" type="text" placeholder="Ej: HR Manager / CTO" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="company-password">Contraseña</label>
+          <input id="company-password" type="password" placeholder="••••••••" autocomplete="new-password" required>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" required>
+          Acepto términos y condiciones.
+        </label>
+
+        <button class="btn" type="submit">Crear cuenta Empresa</button>
+
+        <div class="foot">
+          ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+        </div>
+      </form>
+
+    </section>
+  </main>
+</body>
+</html>
