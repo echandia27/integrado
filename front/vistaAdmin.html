@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchIQ · Admin Dashboard</title>
+  <link rel="stylesheet" href="vistaAdmin.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <a class="brand" href="#">
+          <img class="brand__logo" src="../assets/matchiq2.png" alt="MatchIQ logo" />
+          <div class="brand__stack">
+            <div class="brand__name">MatchIQ</div>
+            <div class="brand__sub">ADMIN SUITE</div>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <a class="nav__item is-active" href="#">
+            <span class="nav__icon">📈</span>
+            <span>Global Dashboard</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">🏢</span>
+            <span>Company Management</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">🛡️</span>
+            <span>User Control</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">🧠</span>
+            <span>AI Health</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="admincard">
+        <div class="admincard__badge">AD</div>
+        <div class="admincard__meta">
+          <div class="admincard__title">Super Admin</div>
+          <div class="admincard__sub">ROOT ACCESS</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <header class="main__header">
+        <div>
+          <h1>Platform Performance</h1>
+          <p class="muted">Business Master Control Panel</p>
+        </div>
+
+        <div class="system">
+          <div class="system__text">
+            <div class="system__label">System Status</div>
+            <div class="system__value">⚡ 100% Operational</div>
+          </div>
+          <button class="iconbtn" aria-label="Notifications">🔔</button>
+        </div>
+      </header>
+
+      <!-- METRICS -->
+      <section class="kpis">
+        <article class="kpi">
+          <div class="kpi__top">
+            <span class="kpi__icon">🧾</span>
+            <span class="kpi__delta kpi__delta--up">+12%</span>
+          </div>
+          <div class="kpi__label">Active Companies</div>
+          <div class="kpi__value">142</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi__top">
+            <span class="kpi__icon">👥</span>
+            <span class="kpi__delta kpi__delta--up">+5.2%</span>
+          </div>
+          <div class="kpi__label">Total Candidates</div>
+          <div class="kpi__value">12,840</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi__top">
+            <span class="kpi__icon">⚡</span>
+            <span class="kpi__delta kpi__delta--up">+18%</span>
+          </div>
+          <div class="kpi__label">Successful Matchings</div>
+          <div class="kpi__value">894</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi__top">
+            <span class="kpi__icon">📈</span>
+            <span class="kpi__delta kpi__delta--up">+7%</span>
+          </div>
+          <div class="kpi__label">MRR (Revenue)</div>
+          <div class="kpi__value">$42,500</div>
+        </article>
+      </section>
+
+      <!-- GRID -->
+      <section class="grid">
+
+        <!-- Latest registered companies -->
+        <div class="panel">
+          <div class="panel__head">
+            <h2>Latest Registered Companies</h2>
+            <a class="link" href="#">View all</a>
+          </div>
+
+          <div class="list">
+            <div class="row">
+              <div class="avatar">T</div>
+              <div class="row__main">
+                <div class="row__title">TechNova Solutions</div>
+                <div class="row__sub">Enterprise Plan</div>
+              </div>
+
+              <div class="row__meta">
+                <div class="row__num">12 Openings</div>
+                <div class="row__sub">Published</div>
+              </div>
+
+              <span class="pill pill--ok">Active</span>
+              <button class="kebab" aria-label="More">⋮</button>
+            </div>
+
+            <div class="row">
+              <div class="avatar">G</div>
+              <div class="row__main">
+                <div class="row__title">GlowHealth</div>
+                <div class="row__sub">Pro Plan</div>
+              </div>
+
+              <div class="row__meta">
+                <div class="row__num">5 Openings</div>
+                <div class="row__sub">Published</div>
+              </div>
+
+              <span class="pill pill--ok">Active</span>
+              <button class="kebab" aria-label="More">⋮</button>
+            </div>
+
+            <div class="row">
+              <div class="avatar">F</div>
+              <div class="row__main">
+                <div class="row__title">Finansys Global</div>
+                <div class="row__sub">Basic Plan</div>
+              </div>
+
+              <div class="row__meta">
+                <div class="row__num">2 Openings</div>
+                <div class="row__sub">Published</div>
+              </div>
+
+              <span class="pill pill--bad">Suspended</span>
+              <button class="kebab" aria-label="More">⋮</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Audit -->
+        <aside class="audit">
+          <h2>AI Audit</h2>
+
+          <div class="meter">
+            <div class="meter__top">
+              <span>Match Accuracy</span>
+              <strong>98.4%</strong>
+            </div>
+            <div class="bar">
+              <div class="bar__fill" style="width:98.4%"></div>
+            </div>
+          </div>
+
+          <div class="meter meter--green">
+            <div class="meter__top">
+              <span>Inference Time</span>
+              <strong>120ms</strong>
+            </div>
+            <div class="bar bar--green">
+              <div class="bar__fill bar__fill--green" style="width:42%"></div>
+            </div>
+          </div>
+
+          <div class="backup">
+            <div class="backup__label">Next Backup</div>
+            <div class="backup__time">🌐 In 04:22:10</div>
+          </div>
+        </aside>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>

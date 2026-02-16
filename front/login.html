@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchIQ · Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div class="bg">
+
+    <header class="topbar">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="../assets/matchiq.png" alt="MatchIQ logo" />
+        <span class="brand__name">MatchIQ</span>
+      </a>
+    </header>
+
+    <main class="page">
+      <section class="auth">
+
+        <div class="auth__head">
+          <h1>Platform Access</h1>
+          <p>Sign in using your corporate or personal credentials.</p>
+        </div>
+
+        <form class="card">
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="example@matchiq.com" required />
+          </div>
+
+          <div class="field">
+            <div class="field__row">
+              <label for="password">Password</label>
+              <a class="link" href="#">Forgot your password?</a>
+            </div>
+            <input id="password" type="password" placeholder="••••••••" required />
+          </div>
+
+          <div class="options">
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+          </div>
+
+          <button class="btn btn--primary">
+            Sign in to MatchIQ
+            <span class="btn__icon">→</span>
+          </button>
+
+          <p class="hint">
+            Protected by MatchIQ identity verification
+          </p>
+
+          <div class="divider"></div>
+
+          <div class="register">
+            <div class="register__col">
+              <span class="register__kicker">Looking for a job?</span>
+              <a class="register__link" href="#">Talent Registration</a>
+            </div>
+
+            <div class="register__sep"></div>
+
+            <div class="register__col">
+              <span class="register__kicker">Are you a recruiter?</span>
+              <a class="register__link" href="#">Company Registration</a>
+            </div>
+          </div>
+
+        </form>
+
+        <footer class="footnote">
+          AI-BASED RECRUITMENT SYSTEM · MATCHIQ V2.0
+        </footer>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>

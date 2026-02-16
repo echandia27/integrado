@@ -1,0 +1,217 @@
+:root{
+  --bg-900: #021024;
+  --bg-800: #052659;
+  --blue-500:#5483B3;
+  --blue-300:#7DA0CA;
+  --blue-100:#C1E8FF;
+
+  --text-900: #021024;
+  --text-700: rgba(2, 16, 36, 0.72);
+  --text-600: rgba(2, 16, 36, 0.62);
+
+  --card: #ffffff;
+  --border: rgba(125, 160, 202, 0.35);
+
+  --shadow: 0 20px 60px rgba(2, 16, 36, 0.12);
+  --radius-xl: 26px;
+}
+
+/* Reset */
+*{ box-sizing: border-box; }
+html, body{ height: 100%; margin:0; }
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+  color: var(--text-900);
+}
+
+/* Fondo */
+.bg{
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 20% 0%, rgba(193,232,255,0.45) 0%, transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, rgba(193,232,255,0.15) 100%);
+  display:flex;
+  flex-direction:column;
+}
+
+/* Topbar más alta */
+.topbar{
+  padding: 35px 60px;
+}
+
+/* Logo más relevante */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  text-decoration:none;
+  color:var(--bg-900);
+}
+
+.brand__logo{
+  width:56px;
+  height:56px;
+  object-fit:contain;
+}
+
+.brand__name{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-0.02em;
+  color:var(--bg-800);
+}
+
+/* Layout */
+.page{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:20px;
+}
+
+/* Contenedor más alto */
+.auth{
+  width:min(520px, 100%);
+  text-align:center;
+  padding-bottom:60px;
+}
+
+.auth__head h1{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.auth__head p{
+  margin-bottom:30px;
+  color:var(--text-700);
+}
+
+/* Card más alta */
+.card{
+  background:var(--card);
+  border-radius:var(--radius-xl);
+  padding:40px 32px;
+  box-shadow:var(--shadow);
+  text-align:left;
+}
+
+/* Inputs */
+.field{
+  margin-bottom:20px;
+}
+
+label{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:rgba(2,16,36,0.6);
+}
+
+input{
+  width:100%;
+  padding:16px;
+  margin-top:8px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:rgba(193,232,255,0.15);
+  outline:none;
+}
+
+input:focus{
+  border-color:var(--blue-500);
+  box-shadow:0 0 0 4px rgba(193,232,255,0.6);
+}
+
+/* Link */
+.link{
+  font-size:12px;
+  font-weight:600;
+  color:var(--bg-800);
+  text-decoration:none;
+}
+
+.checkbox{
+  display:flex;
+  align-items:center;   /* 🔥 Esto corrige la desalineación */
+  gap:8px;
+  font-size:14px;
+  color:var(--text-700);
+}
+
+.checkbox input{
+  width:16px;
+  height:46px;
+  margin:0;            /* elimina desajustes del navegador */
+  accent-color:var(--bg-800);
+  cursor:pointer;
+}
+
+.checkbox span{
+  line-height:1;       /* evita que el texto empuje verticalmente */
+}
+
+
+/* Botón principal */
+.btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:16px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.btn--primary{
+  background:linear-gradient(180deg,var(--bg-800),var(--bg-900));
+  color:white;
+  font-size:16px;
+}
+
+.btn--primary:hover{
+  filter:brightness(1.05);
+}
+
+/* Extras */
+.hint{
+  text-align:center;
+  margin-top:18px;
+  font-size:12px;
+  color:var(--text-600);
+}
+
+.divider{
+  height:1px;
+  background:rgba(125,160,202,0.3);
+  margin:22px 0;
+}
+
+.register{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.register__col{
+  text-align:center;
+}
+
+.register__kicker{
+  font-size:11px;
+  text-transform:uppercase;
+  color:rgba(2,16,36,0.5);
+}
+
+.register__link{
+  font-weight:700;
+  color:var(--bg-800);
+  text-decoration:none;
+}
+
+.footnote{
+  margin-top:25px;
+  font-size:11px;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:rgba(2,16,36,0.4);
+}

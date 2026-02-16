@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchIQ · Company Dashboard</title>
+  <link rel="stylesheet" href="vistaCompania.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <a class="brand" href="#">
+          <img class="brand__mark" src="../assets/matchiq.png" alt="MatchIQ logo" />
+          <div class="brand__name">MatchIQ</div>
+        </a>
+
+        <nav class="nav">
+          <a class="nav__item is-active" href="#">
+            <span class="nav__icon">▦</span>
+            <span>Dashboard</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">▢</span>
+            <span>Openings</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">👥</span>
+            <span>Candidates</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">📊</span>
+            <span>AI Analysis</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">🏢</span>
+            <span>Company Profile</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="credits">
+        <div class="credits__label">AI Credits</div>
+        <div class="credits__value">
+          <strong>85</strong><span>/100</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="main__header">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="muted">Overview of your hiring activity and AI matches.</p>
+        </div>
+
+        <div class="header__actions">
+          <button class="btn btn--ghost">New Opening</button>
+          <button class="btn btn--primary">Run Matching</button>
+        </div>
+      </header>
+
+      <!-- KPI CARDS -->
+      <section class="kpis">
+        <article class="kpi">
+          <div class="kpi__label">Active Openings</div>
+          <div class="kpi__value">1</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi__label">Available Talent</div>
+          <div class="kpi__value">5</div>
+        </article>
+
+        <article class="kpi kpi--highlight">
+          <div class="kpi__label">Potential Matches (&gt; 70%)</div>
+          <div class="kpi__value">4</div>
+        </article>
+      </section>
+
+      <!-- TABLE CARD -->
+      <section class="card">
+        <div class="card__head">
+          <h2>Active Openings Summary</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Opening</th>
+                <th>Status</th>
+                <th>Top Candidates (&gt;70%)</th>
+                <th class="th-right">Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="job">
+                    <div class="job__title">Senior Fullstack Developer</div>
+                    <div class="job__meta">Engineering</div>
+                  </div>
+                </td>
+
+                <td>
+                  <span class="pill pill--success">Active</span>
+                </td>
+
+                <td>
+                  <div class="match">
+                    <span class="match__num">9</span>
+                    <span class="match__text">Direct Match</span>
+                  </div>
+                </td>
+
+                <td class="td-right">
+                  <a class="link" href="#">Manage</a>
+                </td>
+              </tr>
+
+              <!-- Example row (optional) -->
+              <tr>
+                <td>
+                  <div class="job">
+                    <div class="job__title">QA Automation Engineer</div>
+                    <div class="job__meta">Quality</div>
+                  </div>
+                </td>
+
+                <td>
+                  <span class="pill">Draft</span>
+                </td>
+
+                <td>
+                  <div class="match">
+                    <span class="match__num">3</span>
+                    <span class="match__text">Potential</span>
+                  </div>
+                </td>
+
+                <td class="td-right">
+                  <a class="link" href="#">Manage</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

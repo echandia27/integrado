@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchIQ · Talent Registration</title>
+  <link rel="stylesheet" href="registroCoders.css" />
+</head>
+
+<body>
+  <div class="bg">
+
+    <header class="topbar">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="../assets/matchiq.png" alt="MatchIQ logo" />
+        <span class="brand__name">MatchIQ</span>
+      </a>
+    </header>
+
+    <main class="page">
+      <section class="auth">
+
+        <div class="auth__head">
+          <h1>Talent Registration</h1>
+          <p>Complete your details to create your developer profile.</p>
+        </div>
+
+        <form class="card">
+
+          <!-- PERSONAL DETAILS -->
+          <div class="section">
+            <span class="section__badge">Personal Details</span>
+
+            <div class="field">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your name and last name" required />
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label>ID Document</label>
+                <input type="text" placeholder="ID / Passport" required />
+              </div>
+
+              <div class="field">
+                <label>Phone</label>
+                <input type="tel" placeholder="+1 555..." required />
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- PROFESSIONAL PROFILE -->
+          <div class="section">
+            <span class="section__badge">Professional Profile</span>
+
+            <div class="field">
+              <label>Main Role</label>
+              <select required>
+                <option value="" selected disabled>Select a role</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Full Stack Developer</option>
+                <option>DevOps Engineer</option>
+                <option>QA Engineer</option>
+                <option>UX/UI Designer</option>
+                <option>Data Engineer</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>GitHub / Portfolio (optional)</label>
+              <input type="url" placeholder="https://github.com/username" />
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- ACCESS -->
+          <div class="section">
+            <span class="section__badge">Access</span>
+
+            <div class="field">
+              <label>Email Address</label>
+              <input type="email" placeholder="email@example.com" required />
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required />
+              </div>
+
+              <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="••••••••" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="terms">
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>
+                I confirm the information is accurate and I accept the
+                <a href="#">Terms of Service</a>.
+              </span>
+            </label>
+          </div>
+
+          <button class="btn btn--primary" type="submit">
+            Create Talent Account →
+          </button>
+
+        </form>
+
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

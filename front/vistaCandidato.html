@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MatchIQ · Candidate Dashboard</title>
+  <link rel="stylesheet" href="vistaCandidato.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <a class="brand" href="#">
+          <img class="brand__mark" src="../assets/matchiq.png" alt="MatchIQ logo" />
+          <div class="brand__name">MatchIQ</div>
+        </a>
+
+        <nav class="nav">
+          <a class="nav__item is-active" href="#">
+            <span class="nav__icon">▦</span>
+            <span>Dashboard</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">⎔</span>
+            <span>My Processes</span>
+          </a>
+          <a class="nav__item" href="#">
+            <span class="nav__icon">👤</span>
+            <span>My Profile</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar__bottom">
+        <div class="availability">
+          <div class="availability__left">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <div class="availability__title">Availability</div>
+              <div class="availability__sub">Open to new processes</div>
+            </div>
+          </div>
+
+          <label class="switch" aria-label="Toggle availability">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="profilecard">
+          <div class="profilecard__kicker">Candidate</div>
+          <div class="profilecard__name">Mateo Restrepo</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <header class="main__header">
+        <div>
+          <h1>Control Panel</h1>
+          <p class="muted">Manage your selection processes</p>
+        </div>
+
+        <button class="iconbtn" aria-label="Notifications">
+          🔔
+        </button>
+      </header>
+
+      <!-- HERO ROW -->
+      <section class="hero-row">
+        <div class="hero hero--primary">
+          <h2>Welcome back!</h2>
+          <p>
+            You’ve been selected to participate in new technical challenges thanks to your strong profile compatibility.
+          </p>
+        </div>
+
+        <div class="hero hero--stat">
+          <div class="hero__stat">2</div>
+          <div class="hero__statlabel">Active Processes</div>
+        </div>
+      </section>
+
+      <!-- PENDING TESTS -->
+      <section class="section">
+        <h3>Pending Technical Tests</h3>
+
+        <div class="cards">
+          <!-- Card 1 -->
+          <article class="testcard">
+            <div class="testcard__top">
+              <span class="badge badge--info">IN PROGRESS</span>
+              <button class="spark" aria-label="AI insights">✨</button>
+            </div>
+
+            <div class="testcard__title">Lead Backend Engineer</div>
+            <div class="testcard__company">TechNova</div>
+
+            <div class="tags">
+              <span class="tag">Senior</span>
+              <span class="tag">Backend</span>
+            </div>
+
+            <div class="notice notice--warn">
+              ⏱ Expires in: <strong>23:44:28</strong>
+            </div>
+
+            <button class="btn btn--primary btn--wide">
+              ▶ Start Evaluation
+            </button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="testcard">
+            <div class="testcard__top">
+              <span class="badge badge--info">IN PROGRESS</span>
+              <button class="spark" aria-label="AI insights">✨</button>
+            </div>
+
+            <div class="testcard__title">Cloud Architect</div>
+            <div class="testcard__company">GlowHealth</div>
+
+            <div class="tags">
+              <span class="tag">Expert</span>
+              <span class="tag">Architecture</span>
+            </div>
+
+            <div class="notice notice--ok">
+              ✅ Test completed · AI Score: <strong>92/100</strong>
+            </div>
+
+            <button class="btn btn--ghost btn--wide" disabled>
+              Evaluation Received
+            </button>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
